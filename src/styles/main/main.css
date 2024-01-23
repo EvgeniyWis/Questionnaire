@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* Добавление шрифтов */
+@font-face {
+  font-family: Gilroy;
+  src: url("../fonts/Gilroy/Gilroy-Regular.eot");
+  font-weight: normal;
+  font-style: normal;
+}
+/* CSS Normalize */
+* {
+  box-sizing: border-box;
+  transition: 0.4s transform linear;
+  transform: translateY(0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: Gilroy;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #F6F6F6;
+  overflow: hidden;
+}
+
+.overflow-y-on {
+  overflow-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  border: none;
+}
+
+/* Объявление дефолтных классов и переменных */
+.hidden {
+  display: none !important;
+}
+
+.create__survey--class {
+  transform: translateY(200%) !important;
+}
+
+.page_name--class {
+  transform: translateY(0%) !important;
+}
+
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+.opacity-0 {
+  opacity: 0 !important;
+}
+
+.create__survey__page--hidden {
+  transform: translateY(-10%) !important;
+  opacity: 0 !important;
+}
+
+:root {
+  --Y_coordinate: 0;
+}
+
+.create__survey--hide_animation {
+  transform: translateY(var(--Y_coordinate));
+}/*# sourceMappingURL=main.css.map */
